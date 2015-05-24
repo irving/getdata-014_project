@@ -1,0 +1,116 @@
+Data Dictionary
+Human Activities summary analysis 
+for Coursera Getting and Cleaning Data project (May 2015 session).
+
+Observations
+Each row is labeled with the identifier of the test subject and the activity engaged in (and the word "means" describing the analysis). Example:
+
+  Subject_1_WALKING_NORMAL_means     
+
+Activities
+Subjects were observed while engaged in 6 target activities. Those were:
+
+1 WALKING (WALKING_NORMAL)
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
+
+NOTE: In order to make programming less error prone, for this analysis the activity "WALKING" was changed to "WALKING NORMAL"
+
+Features
+
+The features of the dataset are a subset of those from the original data. Original data variables are described in terms of how they were measured (gyroscope or accelerometer) and the axis of measurement (X, Y or Z). In addition, some summary statistics of these variables were generated. In the current analysis, only those variables including mean or standard deviation were used and a mean calculated for each. This leads to the following column names:
+
+
+MEAN_OF_tBodyAcc-mean()-X 
+MEAN_OF_tBodyAcc-mean()-Y 
+MEAN_OF_tBodyAcc-mean()-Z 
+MEAN_OF_tBodyAcc-std()-X 
+MEAN_OF_tBodyAcc-std()-Y 
+MEAN_OF_tBodyAcc-std()-Z 
+MEAN_OF_tGravityAcc-mean()-X 
+MEAN_OF_tGravityAcc-mean()-Y 
+MEAN_OF_tGravityAcc-mean()-Z 
+MEAN_OF_tGravityAcc-std()-X 
+MEAN_OF_tGravityAcc-std()-Y 
+MEAN_OF_tGravityAcc-std()-Z 
+MEAN_OF_tBodyAccJerk-mean()-X 
+MEAN_OF_tBodyAccJerk-mean()-Y 
+MEAN_OF_tBodyAccJerk-mean()-Z 
+MEAN_OF_tBodyAccJerk-std()-X 
+MEAN_OF_tBodyAccJerk-std()-Y 
+MEAN_OF_tBodyAccJerk-std()-Z 
+MEAN_OF_tBodyGyro-mean()-X 
+MEAN_OF_tBodyGyro-mean()-Y 
+MEAN_OF_tBodyGyro-mean()-Z 
+MEAN_OF_tBodyGyro-std()-X 
+MEAN_OF_tBodyGyro-std()-Y 
+MEAN_OF_tBodyGyro-std()-Z 
+MEAN_OF_tBodyGyroJerk-mean()-X 
+MEAN_OF_tBodyGyroJerk-mean()-Y 
+MEAN_OF_tBodyGyroJerk-mean()-Z 
+MEAN_OF_tBodyGyroJerk-std()-X 
+MEAN_OF_tBodyGyroJerk-std()-Y 
+MEAN_OF_tBodyGyroJerk-std()-Z 
+MEAN_OF_tBodyAccMag-mean() 
+MEAN_OF_tBodyAccMag-std() 
+MEAN_OF_tGravityAccMag-mean() 
+MEAN_OF_tGravityAccMag-std() 
+MEAN_OF_tBodyAccJerkMag-mean() 
+MEAN_OF_tBodyAccJerkMag-std() 
+MEAN_OF_tBodyGyroMag-mean() 
+MEAN_OF_tBodyGyroMag-std() 
+MEAN_OF_tBodyGyroJerkMag-mean() 
+MEAN_OF_tBodyGyroJerkMag-std() 
+MEAN_OF_fBodyAcc-mean()-X 
+MEAN_OF_fBodyAcc-mean()-Y 
+MEAN_OF_fBodyAcc-mean()-Z 
+MEAN_OF_fBodyAcc-std()-X 
+MEAN_OF_fBodyAcc-std()-Y 
+MEAN_OF_fBodyAcc-std()-Z 
+MEAN_OF_fBodyAcc-meanFreq()-X 
+MEAN_OF_fBodyAcc-meanFreq()-Y 
+MEAN_OF_fBodyAcc-meanFreq()-Z 
+MEAN_OF_fBodyAccJerk-mean()-X 
+MEAN_OF_fBodyAccJerk-mean()-Y 
+MEAN_OF_fBodyAccJerk-mean()-Z 
+MEAN_OF_fBodyAccJerk-std()-X 
+MEAN_OF_fBodyAccJerk-std()-Y 
+MEAN_OF_fBodyAccJerk-std()-Z 
+MEAN_OF_fBodyAccJerk-meanFreq()-X 
+MEAN_OF_fBodyAccJerk-meanFreq()-Y 
+MEAN_OF_fBodyAccJerk-meanFreq()-Z 
+MEAN_OF_fBodyGyro-mean()-X 
+MEAN_OF_fBodyGyro-mean()-Y 
+MEAN_OF_fBodyGyro-mean()-Z 
+MEAN_OF_fBodyGyro-std()-X 
+MEAN_OF_fBodyGyro-std()-Y 
+MEAN_OF_fBodyGyro-std()-Z 
+MEAN_OF_fBodyGyro-meanFreq()-X 
+MEAN_OF_fBodyGyro-meanFreq()-Y 
+MEAN_OF_fBodyGyro-meanFreq()-Z 
+MEAN_OF_fBodyAccMag-mean() 
+MEAN_OF_fBodyAccMag-std() 
+MEAN_OF_fBodyAccMag-meanFreq() 
+MEAN_OF_fBodyBodyAccJerkMag-mean() 
+MEAN_OF_fBodyBodyAccJerkMag-std() 
+MEAN_OF_fBodyBodyAccJerkMag-meanFreq() 
+MEAN_OF_fBodyBodyGyroMag-mean() 
+MEAN_OF_fBodyBodyGyroMag-std() 
+MEAN_OF_fBodyBodyGyroMag-meanFreq() 
+MEAN_OF_fBodyBodyGyroJerkMag-mean() 
+MEAN_OF_fBodyBodyGyroJerkMag-std() 
+MEAN_OF_fBodyBodyGyroJerkMag-meanFreq() 
+MEAN_OF_angle(tBodyAccMean,gravity) 
+MEAN_OF_angle(tBodyAccJerkMean),gravityMean) 
+MEAN_OF_angle(tBodyGyroMean,gravityMean) 
+MEAN_OF_angle(tBodyGyroJerkMean,gravityMean) 
+MEAN_OF_angle(X,gravityMean) 
+MEAN_OF_angle(Y,gravityMean) 
+MEAN_OF_angle(Z,gravityMean)
+
+For more information about the variables and their meanings please see the file features_info.txt in the root of the zipfile at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. For a complete list of feature names see features.txt within the same archive.
+
+Values in each column are floating point numbers between -1 and 1.
