@@ -52,6 +52,8 @@ The script assumes that the data files needed for the analysis exist *in the sam
 	-  train/subject_train.txt
 -  Also copy the file run_analysis.R into the same folder.
 
+My apologies for not including a script to do this setup auotmatically. Maybe next time.
+
 ## Process ##
 
 **To run:**
